@@ -1,3 +1,4 @@
-# My Awesome Book
+# Oracle Database Memo
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+將自己怪怪的問題蒐集起來的地方
+
