@@ -405,6 +405,32 @@ I am sure you’ll make a lot of people happy.
     
     ```
 
+15. 應用USER RESPONSIBILITY APPLICATION
+    ```sql
+    /* NOTHING */
+    SELECT APPS.FND_PROFILE.VALUE('USER_ID') 
+    FROM dual
+    ;
+
+    /* RUN THE CODE BELOW */
+    BEGIN
+
+    FND_GLOBAL.APPS_INITIALIZE(
+    18404 /*FND_GLOBAL.USER_ID*/
+    ,51048 /*FND_GLOBAL.RESP_ID*/
+    ,401 /*FND_GLOBAL.RESP_APPL_ID*/
+    );
+
+    END;
+
+    /* THE USER 18404 */
+    SELECT APPS.FND_PROFILE.VALUE('USER_ID') 
+    FROM dual
+    ;
+    ```
+
+
+
 [原文連結二](https://community.oracle.com/thread/3687782)
 R12 SQL for responsabilities and menu
 Hello
